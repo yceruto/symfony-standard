@@ -15,7 +15,7 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         $form = $this->createFormBuilder()
-            ->add('foo', 'Symfony\Component\Form\Extension\Core\Type\ChoiceType', [
+            ->add('foo', 'choice', [
                 'choices' => ['A', 'B', 'C'],
                 'choice_value' => function ($value) {
                     if (null === $value) {
